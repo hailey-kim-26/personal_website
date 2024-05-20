@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IT=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <title>Hailey Kim | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+        <div class="logo">HAILEY KIM</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="mobile-nav">
+        <div class="logo">HAILEY KIM</div>
+        <div class="mobile-menu">
+            <div class="mobile-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">EXPERIENCE</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="pic-container">
+            <img src="./assets/homepage-pic_light.png" alt="Homepage Picture">
+        </div>
+        <div class="profile__text-container">
+            <p>hailey@desktop:~$ <span id="typewriter"></span><span class="cursor" id="cursor">|</span></p>
+            <p id="line1" class="hidden">Name: Hailey Kim</p>
+            <p id="line2" class="hidden">Major: B.S. Computer Science</p>
+            <p id="line3" class="hidden">Minor: Mathematics</p>
+            <p id="line4" class="hidden">School: University of Nevada-Las Vegas</p>
+            <p id="line5" class="hidden">hailey@desktop:~$ <span class="cursor" id="final-cursor">|</span></p>
+        </div>
+        <div class="buttons">
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/Hailey_Kim_Resume.pdf')">About Me</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/LI-In-Bug.png" alt="My LinkedIn Profile" class="icon_linkedin" onclick="location.href='http://linkedin.com/in/hailey-kim-/'"/>
+                <img src="./assets/github-mark.png" alt="My GitHub Profile" class="icon_github" onclick="location.href='https://github.com/hailey-kim-26/'"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="title">ABOUT ME</h1>
+        <div class="about-container">
+            <p>
+                Hello! I'm Hailey Kim, a senior at the University of Nevada-Las Vegas, set to graduate in December 2024.<br/>
+                I'm pursuing a Bachelor of Science in Computer Science with a minor in Mathematics.<br/>
+                During my time at UNLV, I've acquired a wealth of knowledge in diverse areas, including programming, problem-solving, geology, ethics, communication, and writing skills.<br/>
+            </p>
+            <p>Welcome to my portfolio!</p>
+            <p>University of Nevada-Las Vegas (Expected Graduation: December 2024)</p>
+            <ul>
+                <li>Bachelor of Science in Computer Science</li>
+                <li>Minor in Mathematics</li><br/>
+            </ul>
+            <p>Skills</p>
+            <ul>
+                <li>C++</li>
+                <li>C</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h1 class="title">EXPERIENCE</h1>
+        <div class="pic-container">
+            <img
+            src="./assets/UNLV-186.png"
+            alt="Experience Picture"
+            class="experience-pic"
+            onclick="location.href='https://www.it.unlv.edu/computer-labs'"
+        />
+        </div>
+        <div class="experience-container">
+            <p>SEPTEMBER 2022 - PRESENT</p>
+            <P>Lab Monitor</P>
+            <p>Office of Information Technology (OIT)<br/>University of Nevada-Las Vegas</p>
+            <p>Job Duties</p>
+            <ul>
+                <li>Assist students with checking out and returning device loan requests.</li>
+                <ul>
+                    <li>Creating tickets for device pick up and return using TeamDynamix Ticketing Systems.</li>
+                    <li>Informing students of essential information, including due dates and device handling procedures.</li>
+                </ul>
+                <li>Provide technical support for computer software and hardware issues.</li>
+                <ul>
+                    <li>Installing software on student devices.</li>
+                    <li>Helping students connect their devices to Wi-Fi network and wireless printers.</li>
+                </ul>
+                <li>Check and ensure all equipment in the labs is functioning properly.</li>
+                <li>Address any violations of lab rules and take appropriate action when necessary.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="title">PROJECTS</h1>
+        <div class="projects-container">
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="title">CONTACT ME</h1>
+        <div class="contact-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:hailey.h.kim.123@gmail.com">hailey.h.kim.123@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/LI-In-Bug.png" alt="LinkedIn Icon" class="icon contact-icon"/>
+                <p><a href="http://linkedin.com/in/hailey-kim-/">LinkedIn</a></p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Copyright &#169; 2024 Hailey Kim. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
