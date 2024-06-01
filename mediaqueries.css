@@ -1,0 +1,17 @@
+@media screen and (max-width: 1700px) {
+    .buttons {
+        position: absolute;
+        margin-top: 750px;
+        margin-left: 100px;
+        left: 350px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+    }
+}
