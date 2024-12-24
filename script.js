@@ -1,14 +1,4 @@
 /*
-    Targeting menu and icon elements to open the menu bar when clicked
-*/
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".mobile-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-
-/*
     Typewriter effect and blinking cursor in Text line
 */
 const firstText = "cat README";
@@ -46,4 +36,9 @@ function showSecondText() {
 
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(typeWriter, speed); // start the typewriter effect once the document is loaded
+});
+
+document.querySelector('.mobile-icon').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.querySelector('.menu-links').classList.toggle('open');
 });
