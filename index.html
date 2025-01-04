@@ -1,168 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IT=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hailey Kim | Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="mediaqueries.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <nav id="desktop-nav">
-                <div class="logo">HAILEY KIM</div>
-                <div>
-                    <ul class="nav-links">
-                        <li><a href="#profile">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-            </nav>
-    
-            <nav id="mobile-nav">
-                <div class="logo">HAILEY KIM</div>
-                <div class="mobile-menu">
-                    <div class="mobile-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="menu-links">
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-                
-            </nav>
-        </header>
-    
-        <!-- Main Content -->
-        <main>
-            <!-- Profile Section -->
-            <section id="profile">
-                <div class="pic-container">
-                    <img src="./assets/homepage-pic_light.png" alt="Homepage Picture">
-                </div>
-                <div class="profile__text-container">
-                    <p>hailey@desktop:~$ <span id="typewriter"></span><span class="cursor" id="cursor">|</span></p>
-                    <p id="line1" class="hidden">Name: Hailey Kim</p>
-                    <p id="line2" class="hidden">Major: B.S. Computer Science</p>
-                    <p id="line3" class="hidden">Minor: Mathematics</p>
-                    <p id="line4" class="hidden">School: University of Nevada-Las Vegas</p>
-                    <p id="line5" class="hidden">hailey@desktop:~$ <span class="cursor" id="final-cursor">|</span></p>
-                </div>
-                <div class="buttons">
-                    <div class="btn-container">
-                        <button class="btn btn-color-resume" onclick="window.open('./assets/Hailey_Kim_Resume.pdf')">About Me</button>
-                        <button class="btn btn-color-contact" onclick="location.href='./#contact'">Contact Me</button>
-                    </div>
-                    <div id="socials-container">
-                        <img src="./assets/LI-In-Bug.png" alt="My LinkedIn Profile" class="icon_linkedin" onclick="location.href='http://linkedin.com/in/hailey-kim-/'"/>
-                        <img src="./assets/github-mark.png" alt="My GitHub Profile" class="icon_github" onclick="location.href='https://github.com/hailey-kim-26/'"/>
-                    </div>
-                </div>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IT=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hailey Kim | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">HAILEY KIM</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
 
-            <!-- About Section -->
-            <section id="about">
-                <h1 class="title">ABOUT ME</h1>
-                <div class="row">
-                    <div class="about-container">
-                        <h3>Education</h3>
-                        <p><span class="italic">University of Nevada-Las Vegas</span></p>
-                        <p>Expected Graduation: December 2024 <br>
-                            Bachelor of Science in Computer Science <br>
-                            Minor in Mathematics
-                        </p>
-                    </div>
-                    <div class="about-container">
-                        <h3>Experience</h3>
-                        <p><span class="italic">Lab Monitor</span></p>
-                        <p>September 2022 - Present</p>
-                        <p>Office of Information Technology <br>
-                            University of Nevada-Las Vegas
-                        </p>
-                    </div>
-                    <div class="about-container">
-                        <h3>Skills</h3>
-                        <p><span class="bold">Programming Languages</span></p>
-                        <p>C++, Python, Java, C, CSS, HTML, JavaScript</p>
-                        <br>
-                        <p><span class="bold">Developer Tools</span></p>
-                        <p>VS Code, Git, Atom</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    
-        <!-- Projects Section -->
-        <section id="projects">
-            <h1 class="title">PROJECTS</h1>
-            <div class="projects-details-container">
-                <div class="projects-containers">
-                  <div class="details-container color-container">
-                    <div class="article-container">
-                      <img src="./assets/pong.png" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="project-sub-title project-title">Pong Game</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-contact project-btn" onclick="location.href='https://github.com/hailey-kim-26/Pong_Game.git'">
-                            Github
-                        </button>                    </div>
-                  </div>
-                  <div class="details-container color-container">
-                    <div class="article-container">
-                      <img src="./assets/tictactoe.png" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="project-sub-title project-title">Tic Tac Toe Game</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-contact project-btn" onclick="location.href='https://github.com/hailey-kim-26/Tic_Tac_Too_Game.git'">
-                            Github
-                        </button>                        </div>
-                  </div>
-                  <div class="details-container color-container">
-                    <div class="article-container">
-                      <img src="./assets/process.png" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="project-sub-title project-title">NOT DONE</h2>
-                    <div class="btn-container">
-                      <button class="btn btn-color-contact project-btn" onclick="location.href='https://github.com/'">Github</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
+      <nav id="mobile-nav">
+        <div class="logo">HAILEY KIM</div>
+        <div class="mobile-menu">
+          <div class="mobile-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="menu-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-        <!-- Contact -->
-        <section id="contact">
-            <h1 class="title">CONTACT ME</h1>
-            <div class="contact-container">
-                <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
-                    <p><a href="mailto:hailey.h.kim.123@gmail.com">hailey.h.kim.123@gmail.com</a></p>
-                </div>
-                <div class="contact-info-container">
-                    <img src="./assets/LI-In-Bug.png" alt="LinkedIn Icon" class="icon contact-icon"/>
-                    <p><a href="http://linkedin.com/in/hailey-kim-/">LinkedIn</a></p>
-                </div>
+    <!-- Main Content -->
+    <main>
+      <!-- Profile Section -->
+      <section id="profile">
+        <div class="pic-container">
+          <img src="./assets/homepage-pic_light.png" alt="Homepage Picture" />
+        </div>
+        <div class="profile__text-container">
+          <p>
+            hailey@desktop:~$ <span id="typewriter"></span
+            ><span class="cursor" id="cursor">|</span>
+          </p>
+          <p id="line1" class="hidden">Name: Hailey Kim</p>
+          <p id="line2" class="hidden">Major: B.S. Computer Science</p>
+          <p id="line3" class="hidden">Minor: Mathematics</p>
+          <p id="line4" class="hidden">
+            School: University of Nevada-Las Vegas
+          </p>
+          <p id="line5" class="hidden">
+            hailey@desktop:~$ <span class="cursor" id="final-cursor">|</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <div class="btn-container">
+            <button
+              class="btn btn-color-resume"
+              onclick="window.open('./assets/Hailey_Kim_Resume.pdf')"
+            >
+              About Me
+            </button>
+            <button
+              class="btn btn-color-contact"
+              onclick="location.href='./#contact'"
+            >
+              Contact Me
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/LI-In-Bug.png"
+              alt="My LinkedIn Profile"
+              class="icon_linkedin"
+              onclick="location.href='http://linkedin.com/in/hailey-kim-/'"
+            />
+            <img
+              src="./assets/github-mark.png"
+              alt="My GitHub Profile"
+              class="icon_github"
+              onclick="location.href='https://github.com/hailey-kim-26/'"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h1 class="title">ABOUT ME</h1>
+        <div class="row">
+          <div class="about-container">
+            <h3>Education</h3>
+            <p><span class="italic">University of Nevada-Las Vegas</span></p>
+            <p>
+              Bachelor of Science in Computer Science <br />
+              Minor in Mathematics
+            </p>
+          </div>
+          <div class="about-container">
+            <h3>Experience</h3>
+            <p><span class="italic">IT Lab Monitor</span></p>
+            <p>August 2022 - December 2024</p>
+            <p>
+              Office of Information Technology <br />
+              University of Nevada-Las Vegas
+            </p>
+          </div>
+          <div class="about-container">
+            <h3>Skills</h3>
+            <p><span class="bold">Programming Languages</span></p>
+            <p>C++, C, Java, Python, SQL, JavaScript, Typescript, HTML, CSS</p>
+            <br />
+            <p><span class="bold">Developer Tools</span></p>
+            <p>Git, Xcode, Visual Studio, CodeRunner, Atom</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1 class="title">PROJECTS</h1>
+      <div class="projects-details-container">
+        <div class="projects-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/toebeans.png"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-        </section>
+            <h2 class="project-sub-title project-title">Toebeans</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-contact project-btn"
+                onclick="location.href='https://github.com/ponds10/CS472.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pong.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-sub-title project-title">Pong Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-contact project-btn"
+                onclick="location.href='https://github.com/hailey-kim-26/Pong_Game.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/tictactoe.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-sub-title project-title">Tic Tac Toe Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-contact project-btn"
+                onclick="location.href='https://github.com/hailey-kim-26/Tic_Tac_Too_Game.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>Copyright &#169; 2024 Hailey Kim. All Rights Reserved.</p>
-        </footer>
-    
-        <!-- JavaScript -->
-        <script src="script.js"></script>
-    </body>
+    <!-- Contact -->
+    <section id="contact">
+      <h1 class="title">CONTACT ME</h1>
+      <div class="contact-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:hailey.h.kim.123@gmail.com"
+              >hailey.h.kim.123@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/LI-In-Bug.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p><a href="http://linkedin.com/in/hailey-kim-/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright &#169; 2024 Hailey Kim. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
