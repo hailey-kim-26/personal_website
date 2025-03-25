@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(typeWriter, speed);
+
+  const mobileIcon = document.querySelector(".mobile-icon");
+  const menuLinks = document.querySelector(".menu-links");
+
+  mobileIcon.addEventListener("click", () => {
+    mobileIcon.classList.toggle("open");
+    menuLinks.classList.toggle("open");
+  });
+});
+
 const firstText = "cat README";
 const secondText = [
     "Name: Hailey Kim",
@@ -10,7 +22,7 @@ const secondText = [
   ];
 
 let index = 0;
-const speed = 100;
+const speed = 120;
 
 function typeWriter() {
   if (index < firstText.length) {

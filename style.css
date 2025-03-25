@@ -184,6 +184,9 @@ section {
 
 .terminal-link:hover {
   color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .close { background: #ff5f56; }
@@ -204,9 +207,10 @@ section {
 .cursor {
   display: inline-block;
   background-color: #000000;
-  width: 10px;
-  height: 16px;
+  width: 8px;
+  height: 18px;
   animation: blink 0.8s infinite;
+  vertical-align: text-bottom;
 }
 
 @keyframes blink {
@@ -266,7 +270,7 @@ section {
     background: #f8f8f8;
     padding: 1rem;
     border-radius: 10px;
-    border-left: 3px solid black;
+    border-left: 3px solid #7b7469;
     margin-left: 20px;
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
