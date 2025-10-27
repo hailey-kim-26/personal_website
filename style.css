@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.italic {
+  font-style: italic;
+}
+
 /* --------------------------DESKTOP NAV-------------------------- */
 nav {
   justify-content: space-around;
@@ -242,36 +246,26 @@ section {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 2rem 0 1rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #aaa;
     padding-bottom: 5px;
 }
 
 /* Timeline Items */
 .timeline-item {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     position: relative;
     padding: 1rem 0;
-}
-
-/* Timeline Dots */
-.timeline-dot {
-    width: 12px;
-    height: 12px;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    left: -18px;
-    top: 12px;
+    gap: 30px;
 }
 
 /* Timeline Content */
 .timeline-content {
-    background: #f8f8f8;
+    background: #222;
+    color: white;
     padding: 1rem;
-    border-radius: 10px;
-    border-left: 3px solid #7b7469;
-    margin-left: 20px;
+    border-radius: 15px;
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -279,7 +273,7 @@ section {
 /* Timeline Hover Effect */
 .timeline-content:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Headers Inside Timeline */
